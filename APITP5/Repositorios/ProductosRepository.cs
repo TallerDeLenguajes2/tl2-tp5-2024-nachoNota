@@ -30,6 +30,35 @@ public class ProductosRepository{
         return productos;
     }
 
+    public Producto GetProducto(int id)
+    {
+        var querystring = "SELECT * FROM Productos WHERE id_producto = @id_producto";
+        var producto = new Producto();
+
+        using(SqliteConnection connection = new SqliteConnection(cadenaConexion))
+        {
+            connection.Open();
+            SqliteCommand command = new SqliteCommand(querystring, connection);
+
+            command.Parameters.Add(new SqliteParameter("@id_producto", id));
+            
+            using(SqliteDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    producto.IdProducto = Convert.ToInt32(reader["id_producto"]);
+                    producto.Descripcion = reader["Descripcion"].ToString();
+                    producto.Precio = Convert.ToInt32(reader["Precio"]);
+                }
+            }
+
+            command.ExecuteNonQuery();
+
+            connection.Close();
+        }
+        return producto;
+    }
+
     public void Create(Producto nuevoProducto)
     {
         var querystring = @"INSERT INTO Productos (Descripcion, Precio) VALUES (@Descripcion, @Precio)";
