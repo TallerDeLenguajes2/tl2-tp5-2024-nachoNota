@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\APITP5.props" />
+</Project>

@@ -1,7 +1,7 @@
 using Microsoft.Data.Sqlite;
 
 public class ProductosRepository{
-    private const string cadenaConexion = "Data source=Tienda.db;Cache=Shared";
+    private const string cadenaConexion = "Data source=db/Tienda.db;Cache=Shared";
 
     public List<Producto> listarProductos()
     {
@@ -32,7 +32,7 @@ public class ProductosRepository{
 
     public Producto GetProducto(int id)
     {
-        var querystring = "SELECT * FROM Productos WHERE id_producto = @id_producto";
+        var querystring = "SELECT * FROM Productos WHERE idProducto = @idProducto";
         var producto = new Producto();
 
         using(SqliteConnection connection = new SqliteConnection(cadenaConexion))
@@ -40,13 +40,13 @@ public class ProductosRepository{
             connection.Open();
             SqliteCommand command = new SqliteCommand(querystring, connection);
 
-            command.Parameters.Add(new SqliteParameter("@id_producto", id));
+            command.Parameters.Add(new SqliteParameter("@idProducto", id));
             
             using(SqliteDataReader reader = command.ExecuteReader())
             {
                 while (reader.Read())
                 {
-                    producto.IdProducto = Convert.ToInt32(reader["id_producto"]);
+                    producto.IdProducto = Convert.ToInt32(reader["idProducto"]);
                     producto.Descripcion = reader["Descripcion"].ToString();
                     producto.Precio = Convert.ToInt32(reader["Precio"]);
                 }
