@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Ignacio\\Documents\\NACHO\\facet\\Taller2\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj": {}
+    "C:\\Users\\Alumno\\Downloads\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Ignacio\\Documents\\NACHO\\facet\\Taller2\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj": {
+    "C:\\Users\\Alumno\\Downloads\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Ignacio\\Documents\\NACHO\\facet\\Taller2\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno\\Downloads\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj",
         "projectName": "APITP5",
-        "projectPath": "c:\\Users\\Ignacio\\Documents\\NACHO\\facet\\Taller2\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj",
-        "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Ignacio\\Documents\\NACHO\\facet\\Taller2\\tl2-tp5-2024-nachoNota\\APITP5\\obj\\",
+        "projectPath": "C:\\Users\\Alumno\\Downloads\\tl2-tp5-2024-nachoNota\\APITP5\\APITP5.csproj",
+        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alumno\\Downloads\\tl2-tp5-2024-nachoNota\\APITP5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

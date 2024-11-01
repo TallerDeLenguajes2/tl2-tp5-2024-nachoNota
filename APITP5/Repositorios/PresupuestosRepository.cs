@@ -40,7 +40,7 @@ public class PresupuestoRepository
                 {
                     var presupuesto = new Presupuesto();
                     presupuesto.NombreDestinatario = reader["NombreDestinatario"].ToString();
-                    presupuesto.FechaCreacion = (DateTime)reader["FechaCreacion"];
+                    presupuesto.FechaCreacion = DateTime.Parse(reader["FechaCreacion"].ToString());
                     presupuesto.IdPresupuesto = Convert.ToInt32(reader["idPresupuesto"]);
                     listaPresupuestos.Add(presupuesto);
                 }
